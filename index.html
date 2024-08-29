@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+<body>
+   <div class="container">
+    <h1>BMI Calculator</h1>
+    <form>
+        <fieldset>
+           <legend>Personal Details </legend>
+           <p>
+            <label>
+              Salutation
+              <br />
+              <select name="salutation">
+                <option>None</option>
+                <option>Mr.</option>
+                <option>Ms.</option>
+                <option>Mrs.</option>
+                <option>Dr.</option>
+                <option>Prof.</option>
+              </select>
+            </label>
+          </p>
+           <p> 
+            
+            <label>Weight in kg:<input type="number" name="weight" id="weight"></label></p>
+           <p> <label>Height in cm:<input type="number" name="height" id="height"></label></p>
+           <p>
+            Gender:
+            <label><input type="radio" name="Gender" value="male"> Male</label>
+            <label><input type="radio" name="Gender" value="female"> Female</label>
+        </p>
+        <p>
+            <label for="">Email: <input type="email" name="Email" id=""></label>
+        </p>
+        <p><label for="">DOB :<input type="date"></label></p>
+        <p><label for="">Address: <br>
+        <textarea name="Address" rows="3" cols="40"></textarea></label></p>
+        <p>
+            <button type="submit">Calculate</button>
+          </p>
+          <div id="result"></div>
+        </fieldset>
+    </form>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
